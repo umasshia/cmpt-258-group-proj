@@ -1,0 +1,40 @@
+There are two text files with the following information stored in them:
+The instructor.txt file where each line stores the id, name and affiliated department of an instructor separated by a comma
+The department.txt file where each line stores the name, location and budget of the department separated by a comma
+
+You need to write a program using your favorite programming language that should be able to read these text files and write to these text files.
+
+You will provide user with the following menu:
+1. Get instructor information.
+2. Get department information.
+3. Insert a record about a new instructor.
+4. Delete a record about an instructor.
+5. Exit
+
+The above menu should continue to be displayed in a loop until the user selects option 5.
+
+When the user selects option 1 above, the following should be displayed:
+Enter the instructor ID:
+If the user enters an instructor id that is not present in the instructor text file, display "The ID doesnot appear in the file.", otherwise, display the name of the instructor, affiliated department and the location of that department.
+
+When the user selects option 2 above, the following should be displayed:
+Enter the department name:
+If the user enters a name that is not present in the department text file, display "The department name does not appear in the file.", otherwise, display the location, budget and names of all instructors that work for the department.
+
+If the user selects option 3 above, display the following:
+Enter the instructor id:
+Enter the instructor name:
+Enter the affiliated department name:
+Once the user enters the above information, store the information in the instructor file only if the following two conditions are met: 1. The department exists in the department file. If not, display "The department doesnot exist and hence the instructor record cannot be added to the database". 2. The instructor id should not already be present in the file. If so, display "Instructor id already exists in the file"
+
+If the user selects option 4 above, display the following:
+Enter the instructor id:
+If the user entered id exists in the file, delete the information about that instructor from the instructor file. If the id does not exist in the file, then display "The ID doesnot appear in the file."
+
+The program should work for any number of rows in the two text files.
+
+Submission
+You will submit your code on Moodle by the specified deadline in the form of a .txt text file. In the code, you will clearly mark as comments which of the teammates worked on that particular module. Also, at the start of the class, be prepared to run your program to show me the results.
+
+Scoring
+20 points for correctly implementing each of the five menu options
